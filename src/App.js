@@ -20,16 +20,16 @@ export const App = () => {
       <div>
         <p>RailwayのReactコースで作成したページです．</p>
         <img src={dogURL}></img>
-        <button
-          onClick={() => {
-            setDogUrl(
-              'https://images.dog.ceo/breeds/rottweiler/n02106550_10966.jpg',
-            )
-          }}
-        >
-          Click Me
-        </button>
       </div>
+      <button
+        onClick={() => {
+          setDogUrl(
+            'https://images.dog.ceo/breeds/rottweiler/n02106550_10966.jpg',
+          )
+        }}
+      >
+        Click Me
+      </button>
     </div>
   )
 }

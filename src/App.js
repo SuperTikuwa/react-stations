@@ -27,7 +27,7 @@ export const App = () => {
             )
           }}
         >
-          Please Click
+          Click Me
         </button>
       </div>
     </div>

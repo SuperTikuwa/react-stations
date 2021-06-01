@@ -13,6 +13,10 @@ export const App = () => {
       <header>
         <h1>Railway-React</h1>
       </header>
+      <div>
+        <p>RailwayのReactコースで作成したページです．</p>
+        <img src="https://images.dog.ceo/breeds/terrier-lakeland/n02095570_763.jpg"></img>
+      </div>
     </div>
   )
 }

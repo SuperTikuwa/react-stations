@@ -15,20 +15,24 @@ export const App = () => {
 
   return (
     <div>
-      <header>
+      <header className="title">
         <h1>Railway-React</h1>
       </header>
-      <div>
-        <p>RailwayのReactコースで作成したページです．</p>
-        <img src={dogURL}></img>
+      <div className="page-content">
+        <div>
+          <p>RailwayのReactコースで作成したページです．</p>
+          <div className="dog-image">
+            <img src={dogURL}></img>
+          </div>
+        </div>
+        <button
+          onClick={() => {
+            getRandomImage().then(res => setDogUrl(res))
+          }}
+        >
+          Click Me
+        </button>
       </div>
-      <button
-        onClick={() => {
-          getRandomImage().then(res => setDogUrl(res))
-        }}
-      >
-        Click Me
-      </button>
     </div>
   )
 }

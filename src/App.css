@@ -1,0 +1,33 @@
+.title {
+  background-color: lightgray;
+  text-align: center;
+  width: 100%;
+  /* padding: 20px 4% 10px; */
+  position: fixed;
+  top: 0;
+}
+
+.page-content {
+  padding: 10%;
+  /* align-items: center; */
+  text-align: center;
+  width: auto;
+  height: auto;
+}
+
+.dog-image {
+  width: 500px auto;
+  height: 500px auto;
+  text-align: center;
+  margin: 0 auto;
+}
+
+button {
+  background-color: lightgreen;
+  width: 100px;
+  height: 50px;
+  border-radius: 10%;
+  border: none;
+  outline: none;
+  /* background: transparent; */
+}

@@ -1,6 +1,7 @@
 // DO NOT DELETE
 
 import * as React from 'react'
+
 import './App.css'
 
 /**
@@ -23,13 +24,20 @@ export const App = () => {
       </div>
       <button
         onClick={() => {
-          setDogUrl(
-            'https://images.dog.ceo/breeds/rottweiler/n02106550_10966.jpg',
-          )
+          getRandomImage().then(res => setDogUrl(res))
         }}
       >
         Click Me
       </button>
     </div>
   )
+}
+
+async function getRandomImage() {
+  const data = await fetch('https://dog.ceo/api/breeds/image/random')
+    .then(res => res.json())
+    .then(json => json.message)
+  // const data = await res.json()
+
+  return data
 }

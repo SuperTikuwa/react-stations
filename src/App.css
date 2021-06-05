@@ -1,25 +1,39 @@
+body {
+  margin: 0;
+}
 .title {
   background-color: lightgray;
+  margin: 0;
+  /* padding: 0 200%; */
   text-align: center;
   width: 100%;
-  /* padding: 20px 4% 10px; */
+  height: 80px;
   position: fixed;
   top: 0;
 }
 
 .page-content {
   padding: 10%;
+  padding-top: 80px;
   /* align-items: center; */
   text-align: center;
-  width: auto;
-  height: auto;
+  /* width: auto;
+  height: auto; */
+  display: flex;
 }
 
 .dog-image {
   width: 500px auto;
   height: 500px auto;
+
   text-align: center;
   margin: 0 auto;
+}
+
+.dog-image img {
+  max-width: 500px;
+  max-height: 500px;
+  /* min-height: 500px auto; */
 }
 
 button {

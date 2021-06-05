@@ -19,20 +19,21 @@ export const App = () => {
         <h1>Railway-React</h1>
       </header>
       <div className="page-content">
-        <div>
+        <div className="app-text">
           <p>RailwayのReactコースで作成したページです．</p>
-          <div className="dog-image">
-            <img src={dogURL}></img>
-          </div>
         </div>
-        <button
-          onClick={() => {
-            getRandomImage().then(res => setDogUrl(res))
-          }}
-        >
-          Click Me
-        </button>
+        <div className="dog-image">
+          <img src={dogURL}></img>
+          <button
+            onClick={() => {
+              getRandomImage().then(res => setDogUrl(res))
+            }}
+          >
+            Click Me
+          </button>
+        </div>
       </div>
+      <hr></hr>
     </div>
   )
 }

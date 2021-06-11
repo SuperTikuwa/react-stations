@@ -24,25 +24,26 @@ export const App = () => {
         </div>
         <div className="dog-image">
           <img src={dogURL}></img>
-          <button
-            onClick={() => {
-              getRandomImage().then(res => setDogUrl(res))
-            }}
-          >
-            Click Me
-          </button>
+          <div className="dog-image-button">
+            <button
+              onClick={async () => {
+                setDogUrl(await getRandomImage())
+              }}
+            >
+              Click Me
+            </button>
+          </div>
         </div>
       </div>
-      <hr></hr>
+      <hr />
     </div>
   )
 }
 
 async function getRandomImage() {
-  const data = await fetch('https://dog.ceo/api/breeds/image/random')
-    .then(res => res.json())
-    .then(json => json.message)
+  const res = await fetch('https://dog.ceo/api/breeds/image/random')
+  const data = await res.json()
   // const data = await res.json()
 
-  return data
+  return data.message
 }

@@ -61,8 +61,14 @@ body {
   border: none;
   outline: none;
   display: inline-block;
-
   /* display: flex; */
+}
+
+@media screen and (max-width: 600px) {
+  .dog-image-button button {
+    width: 80px;
+    color: red;
+  }
 }
 
 hr {
